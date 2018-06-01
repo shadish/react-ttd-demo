@@ -1,15 +1,14 @@
-.App {
-  text-align: center;
+body {
+  background-color: #000;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.app {
+  display: flex;
+  flex-direction: column;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+.app-header {
+  background-color: #336;
   padding: 20px;
   color: white;
 }
@@ -22,7 +21,13 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.app-sideNav {
+ display: flex-box; 
+  border: 1px solid green;
+  width: 30%;
 }
+.app-sideNav-header ,
+.app-sideNav-element {
+  border: 1px solid blue;
+}
+
