@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import component from './CollapseSection';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import rootReducer from './reducers/rootReducer';
+import rootReducer from '../reducers/rootReducer';
 
-it('renders without crashing', () => {
+it('renders CollapseSection without crashing', () => {
   const div = document.createElement('div');
   const store = createStore(rootReducer);
   ReactDOM.render(
   	<Provider store={store}>
-  	<App />
+  	<component />
   	</Provider>, div);
   ReactDOM.unmountComponentAtNode(div);
 });
