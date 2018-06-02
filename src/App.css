@@ -1,33 +1,55 @@
 body {
-  background-color: #000;
+  background-color: #211;
+  color: #ecc;
 }
+
+a {color: #fff; text-decoration: none; }
+a:hover {text-decoration: underline; }
 
 .app {
   display: flex;
   flex-direction: column;
 }
 
+.app-content {
+  display: flex;
+  flex-direction: row;
+}
+
 .app-header {
-  background-color: #336;
   padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
+  background-color: #533;
 }
 
 .app-sideNav {
- display: flex-box; 
-  border: 1px solid green;
-  width: 30%;
-}
-.app-sideNav-header ,
-.app-sideNav-element {
-  border: 1px solid blue;
+  padding: 1em;
+  display: flex; 
+  flex-direction: column;
+  min-width: 8em;
+  background-color: #100;
+  border-right: 1px solid #433;
 }
 
+.app-sideNav div, .app-sideNav a{
+  margin-bottom: 0.25em;
+}
+
+.app-body{
+  width: 100%;
+  min-height: 38em;
+}
+
+.collapse-section {
+  margin: 0.5em;
+  border: 1px solid #433;
+}
+
+.collapse-section-header {
+  padding: 0.5em;
+  background-color: #433;
+  border-bottom: inherit;
+}
+
+.collapse-section-body {
+  padding: 1em;
+}
